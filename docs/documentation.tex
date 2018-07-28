@@ -1,4 +1,5 @@
 \documentclass{book}
+\usepackage{../src/Theme}
 
 % Licensed under CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
 % Copyright (c) 2018 C. H. Lay
@@ -7,6 +8,29 @@
 \author{C. H. Lay}
 
 \begin{document}
-    \maketitle
-    \tableofcontents
+\maketitle
+\tableofcontents
+
+\chapter{Usage Principles}
+Any \term{ordinary page} is a standalone article.
+The article formats are optimized for computer science, mathematics and biology.
+The purpose is to write individual documents to refer back in the future without
+a need to reread from original sources.
+
+The base level for subject titles is \term{section}.
+
+\chapter{Theme Stylings}
+\section{Terms}
+Many scientific texts seem to italicize a new term whenever it first occurs.
+We also follow that convention by italicizing and coloring the term.
+
+\begin{example}
+The \term{term style} is defined in \verb|\term| command.
+\end{example}
+
+\chapter{Pseudocode Language}
+\term{Pseudocode} is written in a pseudolanguage which is a mix of Kotlin, Python and C.
+It also grows to support new programming paradigms whenever necessary.
+The core feature is to provide compact notations and readable syntax.
+
 \end{document}
