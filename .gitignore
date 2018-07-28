@@ -4,5 +4,4 @@
 *.log
 *.synctex.gz
 *.toc
-
-examples/*.pdf
+*.pdf

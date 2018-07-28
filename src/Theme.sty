@@ -18,3 +18,32 @@
 
 % New Commands
 \newcommand{\term}[1]{\emph{\color{Thistle}{#1}}}
+
+% Defining the pseudolanguage
+\lstdefinelanguage{Pseudolanguage}
+{
+	% Basic Keywords
+	morekeywords=[1]{
+		% Data Types
+		Char, Integer, Int, String, Str,
+		% Control Flow
+		for, if,
+		% Functions
+		define, def, return
+	},
+	keywordstyle=[1]\bf\ttfamily\color{MidnightBlue},
+	% Standard Libary
+	morekeywords=[2]{
+		sqrt
+	},
+	keywordstyle=[2]\bf\ttfamily\color{RubineRed},
+	morestring=[b]",
+	% Comments
+	morecomment=[l]{\#},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{Gray},
+	% The Stylings
+	basicstyle=\small\ttfamily,
+}
+\lstset{language=Pseudolanguage}
+

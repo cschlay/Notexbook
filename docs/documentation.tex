@@ -15,11 +15,13 @@
 Any \term{ordinary page} is a standalone article.
 The article formats are optimized for computer science, mathematics and biology.
 The purpose is to write individual documents to refer back in the future without
-a need to reread from original sources.
+a need to reread from original sources. The base level for subject titles is \term{section}.
 
-The base level for subject titles is \term{section}.
+Because the articles are written in \LaTeX, you can use any package 
+that do not have conflicts with the commands defined here.
+However, if they do it is easier to conflicting ones in \verb|Theme.sty| file.
 
-\chapter{Theme Stylings}
+\chapter{The Stylings}
 \section{Terms}
 Many scientific texts seem to italicize a new term whenever it first occurs.
 We also follow that convention by italicizing and coloring the term.
@@ -32,5 +34,57 @@ The \term{term style} is defined in \verb|\term| command.
 \term{Pseudocode} is written in a pseudolanguage which is a mix of Kotlin, Python and C.
 It also grows to support new programming paradigms whenever necessary.
 The core feature is to provide compact notations and readable syntax.
+\\\\
+\noindent
+Also note that I have not designed or invented any of the features I am describing.
+This is just a way to organize and simplify the programmatic thought processes.
 
+\section{Basic Syntax}
+\begin{enumerate}
+    \item Every expression is ended by ';' character.
+    \item 
+\end{enumerate}
+
+\section{Comments}
+\begin{example} The language supports two kinds of comments.
+\begin{lstlisting}
+# This is a single-line comment.
+/*
+ *  The multi-line comment.
+ */
+\end{lstlisting}
+\end{example}
+
+\section{Data Types}
+\begin{example}
+The data types are declared similarly to UML inspired by Kotlin.
+\begin{lstlisting}
+a: Integer = 1        # or Int.
+b: Char = 'j'         # Is equivalent to Integer.
+d: String = "example" # or Str, is equivalent to Char[].
+\end{lstlisting}
+\end{example}
+
+\section{Control Flow}
+
+\section{Functions}
+\begin{example} The functions are inspired by Kotlin and Scheme.
+\begin{lstlisting}
+define square(x: Integer)
+{
+    return (* x x);
+}: Integer
+
+# The function above can be simplified to
+{def square(x: Int) (* x x)}: Int;
+\end{lstlisting}
+\end{example}
+
+\subsection{Iterative Process}
+
+\subsection{Recursive Process}
+
+\section{Standard Library}
+Lets fantasize that everything is accessible.
+The basic or common functions are defined in the \verb|Theme.sty|.
 \end{document}
