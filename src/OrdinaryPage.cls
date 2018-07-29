@@ -5,9 +5,7 @@
 
 % Copyright (c) 2018 C. H. Lay
 \LoadClass{article}
-
-% Configure the path for easier access.
-% \RequirePackage{Theme}
+\RequirePackage{notexbook}
 
 % External Package Imports
 \RequirePackage{amsmath}
