@@ -6,15 +6,17 @@
 \RequirePackage[usenames, dvipsnames]{color}
 
 \RequirePackage{amsmath}
+\RequirePackage{amssymb}
 \RequirePackage{amsthm}
 
 \RequirePackage{listings}
 
 
 % Style Settings
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
 \theoremstyle{definition}
 \newtheorem{example}{Example}
-
 
 % New Commands
 \newcommand{\term}[1]{\emph{\color{Thistle}{#1}}}
@@ -37,6 +39,7 @@
 		sqrt
 	},
 	keywordstyle=[2]\bf\ttfamily\color{RubineRed},
+	% Other Syntactical stuff.
 	morestring=[b]",
 	% Comments
 	morecomment=[l]{\#},
@@ -46,4 +49,3 @@
 	basicstyle=\small\ttfamily,
 }
 \lstset{language=Pseudolanguage}
-
