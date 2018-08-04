@@ -30,8 +30,8 @@ We also follow that convention by italicizing and coloring the term.
 The \term{term style} is defined in \verb|\term| command.
 \end{example}
 
-\chapter{Pseudocode Language}
-\term{Pseudocode} is written in a pseudolanguage which is a mix of Kotlin, Python and C.
+\chapter{Pseudolanguage}
+Code examples are written in a \term{pseudolanguage} which is a mix of Kotlin, Python and C.
 It also grows to support new programming paradigms whenever necessary.
 The core feature is to provide compact notations and readable syntax.
 \\\\
@@ -87,4 +87,28 @@ define square(x: Integer)
 \section{Standard Library}
 Lets fantasize that everything is accessible.
 The basic or common functions are defined in the \verb|Theme.sty|.
+
+\chapter{Algorithms}
+Algorithms pseudocode are written in mathematical style mixed
+with the pseudolanguage defined in previous chapter.
+
+\begin{example}
+    An example of algorithm using algorithmicx.
+    \begin{algorithm}
+        \caption{Multiply two integers}
+        \begin{algorithmic}
+            \Require{Integers $a, b$}
+            \Ensure{The product $c$ of $a$ and $b$.}
+            \Statex
+            \Function{Multiply}{$a, b$}
+                \State{$c \gets 0$}
+                \While{$b \neq 0$}
+                    \State{$c = c + a$}
+                \EndWhile
+                \Return{$c$}
+            \EndFunction
+        \end{algorithmic}
+    \end{algorithm}
+\end{example}
+
 \end{document}
