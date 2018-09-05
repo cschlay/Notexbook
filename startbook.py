@@ -4,7 +4,7 @@ argv = sys.argv
 book_name = argv[1]
 author = argv[2]
 
-# Set the path (inclding directory) to which create a new notebook.
+# Set the path (including directory) to which create a new notebook.
 LOCATION = 'C:/' + book_name + '/main.tex'
 
 file = open(LOCATION, 'w+')

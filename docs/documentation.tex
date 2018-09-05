@@ -27,7 +27,14 @@ Many scientific texts seem to italicize a new term whenever it first occurs.
 We also follow that convention by italicizing and coloring the term.
 
 \begin{example}
-The \term{term style} is defined in \verb|\term| command.
+The \term{term style} is defined in \verb|\term|.
+\end{example}
+
+\section{Read As}
+We usually introduce new mathematical notations but readers often don't know how it is read. Therefore, I have seen it is necessary to style it differently for quick access.
+
+\begin{example}
+The style for \readas{"this text"} is accessed with \verb|\readas|.
 \end{example}
 
 \chapter{Pseudolanguage}
@@ -59,9 +66,9 @@ This is just a way to organize and simplify the programmatic thought processes.
 \begin{example}
 The data types are declared similarly to UML inspired by Kotlin.
 \begin{lstlisting}
-a: Integer = 1        # or Int.
-b: Char = 'j'         # Is equivalent to Integer.
-d: String = "example" # or Str, is equivalent to Char[].
+a: Integer = 1;        # or Int.
+b: Char = 'j';         # Is equivalent to Integer.
+d: String = "example"; # or Str, is equivalent to Char[].
 \end{lstlisting}
 \end{example}
 
@@ -72,11 +79,11 @@ d: String = "example" # or Str, is equivalent to Char[].
 \begin{lstlisting}
 define square(x: Integer)
 {
-    return (* x x);
+    return *(x x);
 }: Integer
 
 # The function above can be simplified to
-{def square(x: Int) (* x x)}: Int;
+{def square(x: Int) *(x x)}: Int;
 \end{lstlisting}
 \end{example}
 
@@ -106,7 +113,7 @@ with the pseudolanguage defined in previous chapter.
                     \State{$c = c + a$}
                     \State{$b = b - 1$}
                 \EndWhile
-                \Return{$c$}
+                \State{\Return{$c$}}
             \EndFunction
         \end{algorithmic}
     \end{algorithm}
