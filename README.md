@@ -22,17 +22,6 @@ I could not execute .sh -file. But opening the project directory and running the
 
 1. Copy the files from ```src/``` to ```~/texmf/tex/latex/notexbook```.
 2. Run ```texhash ~/texmf```.
-3. Try to compile the documentation.
-
-### TexLive (Windows 10)
-
-Warning: I am not sure about the fourth step!
-
-1. Open file ```C:\texlive\2018\texmf.cnf```. The installation path may differ.
-2. Add ```TEXMFLOCAL = C:\texlive\texmf-local``` to the file.
-3. Copy the files from ```src``` to ```C:/texlive/texmf-local/tex/latex/base```. I am not sure about the location!!!!
-4. Run ```texhash``` in command prompt.
-5. Try to compile the documentation.
 
 ## License
 

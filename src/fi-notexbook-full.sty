@@ -1,0 +1,33 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{fi-notexbook-full}[2018/12/08 Notexbook Finnish Edition]
+
+% A style file that contains every package and command I will ever use.
+
+% == FONTS
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[finnish]{babel}
+
+\RequirePackage[usenames, dvipsnames]{color}
+
+% When mentioning a term first time..
+\newcommand{\term}[2]{\emph{\color{Thistle}{#1}}(#2)}
+% FONTS ==
+
+% == MATH
+\RequirePackage{amsmath}
+\RequirePackage{amsthm}
+\RequirePackage{amssymb}
+
+\newtheorem{thm}{Lause}[section]
+\newtheorem{crl}{Seuraus}[theorem]
+\theoremstyle{definition}
+\newtheorem{dfn}{Määritelmä}
+\newtheorem{exp}{Esimerkki}
+% MATH ==
+
+% == CS
+\RequirePackage{algpseudocode}
+\RequirePackage{algorithm, algorithmicx}
+\RequirePackage{listings}
+% CS ==
