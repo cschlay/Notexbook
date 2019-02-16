@@ -10,18 +10,15 @@ As we do not support paper to LaTeX conversion notepads, one must write their no
 
 ## Installation
 
-### Direct Usage
-
-1. Copy the files from ```src``` to your project root directory.
-2. Place ```\documentclass{notexbook-full}``` in the beginning of your ```<file_name>.tex``` file.
-3. If that did not work, check the relative path in the file name.
-
 ### TexLive (Ubuntu)
 
-I could not execute .sh -file. But opening the project directory and running the commands in ```quick-install.sh``` would work.
+If you do not have another LaTeX package installed as **notexbook**, then
+it can be installed by running such in a shell.
 
-1. Copy the files from ```src/``` to ```~/texmf/tex/latex/notexbook```.
-2. Run ```texhash ~/texmf```.
+1. ```git clone https://github.com/cschlay/notexbook.git```
+2. ```cd notexbook```
+3. ```source install.sh```
+
 
 ## License
 
