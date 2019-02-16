@@ -1,17 +1,17 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{fi-notexbook-full}[2018/12/08 Notexbook Finnish Edition]
+\ProvidesPackage{en-notexbook-full}[2018/12/08 Notexbook English Edition]
 
 % A style file that contains every package and command I will ever use.
 
 % == FONTS
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
-\RequirePackage[finnish]{babel}
+\RequirePackage[english]{babel}
 
 \RequirePackage[usenames, dvipsnames]{color}
 
 % When mentioning a term first time..
-\newcommand{\term}[2]{\emph{\color{Thistle}{#1}}(#2)}
+\newcommand{\term}[1]{\emph{\color{Thistle}{#1}}}
 % FONTS ==
 
 % == MATH
@@ -19,11 +19,11 @@
 \RequirePackage{amsthm}
 \RequirePackage{amssymb}
 
-\newtheorem{thm}{Lause}[section]
-\newtheorem{clr}{Seuraus}[thm]
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{clr}{Corollary}[thm]
 \theoremstyle{definition}
-\newtheorem{dfn}{Määritelmä}
-\newtheorem{example}{Esimerkki}
+\newtheorem{dfn}{Definition}
+\newtheorem{example}{Example}
 % MATH ==
 
 % == CS

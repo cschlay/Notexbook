@@ -1,7 +1,9 @@
 #!/bin/bash
-echo "Copying the files to ~/texmf/tex/latex/..."
-mkdir -p ~/texmf/tex/latex/notexbook
-cp -rf src/notexbook-full.cls ~/texmf/tex/latex/notexbook
-cp -rf src/notexbook.sty ~/texmf/tex/latex/notexbook
+LATEX=~/texmf/tex/latex/notexbook
+
+echo "Copying the files to $LATEX..."
+mkdir -p -v $LATEX
+cp -rf -v src/fi-notexbook-full.sty $LATEX
+cp -rf -v src/en-notexbook-full.sty $LATEX
 echo "Updating the indexes..."
 texhash ~/texmf
